@@ -15,8 +15,8 @@ export default function About() {
           </p>
         </div>
         
-        <div className="p-12 glass rounded-[3rem] border-white/5">
-          <div className="space-y-8">
+        <div className="p-6 sm:p-12 glass rounded-[2rem] sm:rounded-[3rem] border-white/5">
+          <div className="space-y-6 sm:space-y-8">
             <div className="flex items-center justify-between">
               <span className="text-text-gray font-medium">VERSION</span>
               <span className="font-bold">3.0.0</span>
@@ -25,9 +25,9 @@ export default function About() {
               <span className="text-text-gray font-medium">COMMANDS</span>
               <span className="font-bold text-accent-green">215+</span>
             </div>
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <span className="text-text-gray font-medium">PLATFORMS</span>
-              <span className="font-bold">WIN | MAC | LINUX | ANDROID</span>
+              <span className="font-bold text-sm sm:text-base">WIN | MAC | LINUX | ANDROID</span>
             </div>
             <div className="flex items-center justify-between">
               <span className="text-text-gray font-medium">LICENSE</span>

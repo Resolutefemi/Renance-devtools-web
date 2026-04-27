@@ -17,6 +17,7 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
+    { name: "Commands", href: "/commands" },
     { name: "Deploy", href: "#features" },
     { name: "Media", href: "#features" },
     { name: "Hacker", href: "#features" },
@@ -24,7 +25,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "glass py-3" : "py-6"}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${isScrolled ? "glass py-3" : "py-6"} bg-black/10 backdrop-blur-md border-b border-white/5`}>
       <div className="container flex items-center justify-between">
         <Link href="/" className="text-2xl font-bold tracking-tighter flex items-center gap-2">
           <span className="text-primary-crimson">Renance</span>

@@ -2,6 +2,7 @@
 
 import { Copy, Terminal } from "lucide-react";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Hero() {
   const [copied, setCopied] = useState(false);
@@ -19,7 +20,7 @@ export default function Hero() {
           <h2 className="text-sm font-bold tracking-[0.3em] text-primary-crimson uppercase mb-6">
             VERSION 3.0 OUT NOW
           </h2>
-          <h1 className="text-6xl md:text-8xl font-bold tracking-tight mb-8">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8">
             One command to <br />
             <span className="text-text-gray">rule them all.</span>
           </h1>
@@ -45,9 +46,17 @@ export default function Hero() {
             )}
           </div>
           
-          <button className="px-8 py-4 bg-text-white text-black font-bold rounded-2xl hover:scale-105 transition-transform">
+          <Link href="/commands" className="px-8 py-4 bg-text-white text-black font-bold rounded-2xl hover:scale-105 transition-transform">
             GET STARTED
-          </button>
+          </Link>
+        </div>
+        
+        <div className="mt-8 flex flex-col items-center gap-2 animate-in [animation-delay:600ms]">
+          <p className="text-sm text-text-gray">Or install locally via source:</p>
+          <div className="flex gap-4">
+            <span className="px-3 py-1 bg-white/5 border border-white/10 rounded-lg text-xs font-mono">install.bat (Windows)</span>
+            <span className="px-3 py-1 bg-white/5 border border-white/10 rounded-lg text-xs font-mono">bash install.sh (Unix)</span>
+          </div>
         </div>
       </div>
     </section>
