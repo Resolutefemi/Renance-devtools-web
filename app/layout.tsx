@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Renance DevTools - One command to rule them all",
-  description: "Unified CLI ecosystem for modern power users and developers. 200+ specialized commands.",
+  description: "Unified CLI ecosystem for modern power users and developers. 220+ specialized commands.",
 };
 
 export default function RootLayout({
